@@ -22,6 +22,10 @@ app.use('/api/v1/User', User)
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
+app.get('/',async(req, res)=>{
+res.status(200).("Jobs_API")
+})
+
 const port = process.env.PORT || 3000;
 
 const start = async () => {
